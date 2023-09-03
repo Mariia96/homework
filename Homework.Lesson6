@@ -1,0 +1,81 @@
+ function makeUppercase(value) {
+    if (typeof value === 'string') {
+       return value.toUpperCase();
+     } else {
+       console.error('Error: Incorrect data type. Input should be a string.');
+       return null; 
+     }
+   }
+  
+  
+   const inputString = "Hello, World!";
+   const result = makeUppercase(inputString); 
+   console.log(result); 
+  
+   const inputNumber = 42;
+  const result2 = makeUppercase(inputNumber); 
+
+
+  
+   function addNumberProperty(obj, propertyName, propertyValue) {
+     if (typeof propertyValue === 'number') {
+       obj[propertyName] = propertyValue;
+     } else {
+       console.error(`Error: Property '${propertyName}' must have a number value.`);
+     }
+   }
+  
+  
+   const myObject = {};
+  
+   addNumberProperty(myObject, 'age', 25); 
+   addNumberProperty(myObject, 'height', '180'); 
+  
+  console.log(myObject); 
+
+
+
+   const myObject = {
+     name: "Mariia",
+     age: 26,
+     city: "Lviv",
+     isStudent: false,
+     hobbies: ["Reading", "Sleeping", "Cooking"]
+   };
+  
+   console.log(myObject);
+
+ function addNumberProperty(obj, propertyName, propertyValue) {
+     if (typeof propertyValue === 'number') {
+       obj[propertyName] = propertyValue;
+     } else {
+       console.error(`Error: Property '${propertyName}' must have a number value.`);
+     }
+   }
+  
+   const myObject = {
+     name: "Mariia",
+     age: 26,
+     city: "Lviv",
+     isStudent: false,
+     hobbies: ["Reading", "Sleeping", "Cooking"]
+   };
+  
+  addNumberProperty(myObject, 'height', 160);
+  
+   console.log(myObject);
+
+
+let sum = function(a, b) {
+    return a + b;
+  };
+  
+  
+
+  
+  
+  
+  
+  
+  
+
