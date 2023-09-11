@@ -1,0 +1,43 @@
+const myArray = new Array(10).fill(0);
+
+console.log(myArray)
+
+
+
+
+// Function to add a value to the array under index 500
+function addToIndex500(value) {
+myArray[500] = value;
+}
+addToIndex500("Hello, Index 500!");
+console.log(myArray);
+
+
+function separateStringAndNumberElements(inputArray) {
+    const stringArray = [];
+    const numberArray = [];
+  
+    for (let i = 0; i < inputArray.length; i++) {
+      const element = inputArray[i];
+  
+      if (typeof element === 'string') {
+        stringArray.push(element);
+      } else if (typeof element === 'number') {
+        numberArray.push(element);
+      }
+    }
+  
+    return {
+      strings: stringArray,
+      numbers: numberArray,
+    };
+  }
+  
+  const inputArray = [1, 'orange', 2, 'banana', 'cherry', 3];
+  const result = separateStringAndNumberElements(inputArray);
+  
+  console.log('Strings:', result.strings);
+  console.log('Numbers:', result.numbers);
+  
+
+  
